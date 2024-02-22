@@ -1,0 +1,233 @@
+$(document).ready(_=>{
+    // $("#navi-toggle").prop('checked', true);
+    $("#navi-toggle").removeClass("checked");
+    //When Click on outer Portfolio link
+    $(".port_main_link").click(e=>{
+        e.preventDefault();
+        $("#navi-toggle").addClass("checked");
+
+        $(".my_submenu_wrapper.portfolio_menus").removeClass("el_inactive");
+        $(".my_submenu_wrapper.portfolio_menus").addClass("el_active");
+
+        $(".port_inner_link").addClass("el_inactive");
+        $(".port_inner_link").removeClass("el_active");
+
+        $(".main_inner_link").removeClass("el_inactive");
+        $(".main_inner_link").addClass("el_active");
+
+        //Set Portfolio as active menu
+        localStorage.setItem("openMenu","portfolio");
+
+    });
+
+    $(".menu_main_link").click(e=>{
+        e.preventDefault();
+        if($(".navigation__checkbox").hasClass("checked")){
+            $("#navi-toggle").removeClass("checked");
+            localStorage.setItem("openMenu",null);
+        }else{
+            $("#navi-toggle").addClass("checked");
+            localStorage.setItem("openMenu","main_menu");
+        }
+        
+    });
+
+    //When Click on outer Menu link
+    $(".menu_main_link").click(e=>{
+        $(".my_submenu_wrapper.portfolio_menus").addClass("el_inactive");
+        $(".my_submenu_wrapper.portfolio_menus").removeClass("el_active");
+
+        $(".port_inner_link").removeClass("el_inactive");
+        $(".port_inner_link").addClass("el_active");
+
+        $(".main_inner_link").addClass("el_inactive");
+        $(".main_inner_link").removeClass("el_active");
+
+        //Set Main menu as active menu
+        // localStorage.setItem("openMenu","main_menu");
+
+    });
+
+    //When Click on inner Portfolio link
+    $(".port_inner_link").click(e=>{
+        e.preventDefault();
+        $(".my_submenu_wrapper.portfolio_menus").removeClass("el_inactive");
+        $(".my_submenu_wrapper.portfolio_menus").addClass("el_active");
+
+        $(".port_inner_link").addClass("el_inactive");
+        $(".port_inner_link").removeClass("el_active");
+
+        $(".main_inner_link").removeClass("el_inactive");
+        $(".main_inner_link").addClass("el_active");
+
+        //Set Portfolio as active menu
+        localStorage.setItem("openMenu","portfolio");
+    });
+
+    //When Click on inner Menu link
+    $(".main_inner_link").click(e=>{
+        e.preventDefault();
+        $(".my_submenu_wrapper.portfolio_menus").addClass("el_inactive");
+        $(".my_submenu_wrapper.portfolio_menus").removeClass("el_active");
+
+        $(".port_inner_link").removeClass("el_inactive");
+        $(".port_inner_link").addClass("el_active");
+
+        $(".main_inner_link").addClass("el_inactive");
+        $(".main_inner_link").removeClass("el_active");
+
+        //Set Main menu as active menu
+        localStorage.setItem("openMenu","main_menu");
+    });
+
+    //When Click on Portfolio Submenu menu
+    $(".portfolio_menus .sb_mnu").click(e=>{
+
+        e.preventDefault();
+        var submenuId = $(e.target).attr("id");
+         
+        var activeContentName = submenuId.split('_')[0];
+        
+        $(".my_submenu_content .inner_menu_content .menu_content").removeClass("el_active");
+        $(".my_submenu_content .inner_menu_content .menu_content").addClass("el_inactive");
+        $(".my_submenu_content .inner_menu_content ."+submenuId+"_content").addClass("el_active");
+        $(".sb_mnu").removeClass("active_m");
+        $("#"+submenuId).addClass("active_m");
+
+        //Set Portfolio as active menu
+        localStorage.setItem("openMenu","portfolio");
+    });
+
+    //When Click on Mobile PortFolio Link
+    $(".mobile_port_link").click(e=>{
+        e.preventDefault();
+        $(".my_submenu_wrapper.portfolio_menus").removeClass("el_inactive");
+        $(".my_submenu_wrapper.portfolio_menus").addClass("el_active");
+
+        //Set Portfolio as active menu
+        localStorage.setItem("openMenu","portfolio");
+    });
+
+    //When Click on main menu links
+    $(".navigation__list .mn_link").click(e=>{
+        //Set Main menu as active menu
+        localStorage.setItem("openMenu","main_menu");
+    });
+
+    $(".portfolio_menus .menu_mobile_only .sub_menu").click(e=>{
+        //Set Portfolio menu as active menu
+        localStorage.setItem("openMenu","portfolio");
+    });
+
+    //To set Localstorage active menu null when click on any other links
+    $(".menu_local_link").click(e=>{
+        if($(e.target).hasClass("ham_link")){
+            return true;
+        }
+        else{
+            //Clear Localstorage here to unset active menu
+            localStorage.setItem("openMenu",null);
+        }
+    });
+
+    //If on homepage and click Services in Menu 
+    $("#ham_menu #service .ham_link").click(e=>{
+        location.reload();
+    })
+
+    //TO track which portfolio submenu is currently active
+    $(".menu_content_btn").click(e=>{
+        var port_btn_id = $(e.target).attr("id");
+        if(port_btn_id=="still_btn"){
+            localStorage.setItem("port_submenu",port_btn_id);
+        }
+        else if(port_btn_id=="video_btn"){
+            localStorage.setItem("port_submenu",port_btn_id);
+        }
+        else if(port_btn_id=="concept_btn"){
+            localStorage.setItem("port_submenu",port_btn_id);
+        }
+        else if(port_btn_id=="interactive_btn"){
+            localStorage.setItem("port_submenu",port_btn_id);
+        }
+    })
+
+    //To get which menu is to be Active
+    var activeMenu = localStorage.getItem("openMenu");
+
+    //Condition to check whether back button is pressed
+    if (window.performance && window.performance.navigation.type == window.performance.navigation.TYPE_BACK_FORWARD) {
+        // If back button pressed, check for active menu in localstorage and Open that menu
+        console.log(activeMenu);
+        if(activeMenu=='main_menu'){
+            //If Main Menu
+            $("#navi-toggle").addClass("checked");
+
+            $(".port_inner_link").removeClass("el_inactive");
+            $(".port_inner_link").addClass("el_active");
+
+            $(".main_inner_link").removeClass("el_active");
+            $(".main_inner_link").addClass("el_inactive");
+
+            $(".my_submenu_wrapper.portfolio_menus").removeClass("el_active");
+            $(".my_submenu_wrapper.portfolio_menus").addClass("el_inactive");
+
+            //Clear Localstorage here to unset active menu
+            localStorage.setItem("openMenu",null);
+        }
+        else if(activeMenu=='portfolio'){
+            //If Portfolio Menu
+            $("#navi-toggle").addClass("checked");
+
+            $(".port_inner_link").removeClass("el_active");
+            $(".port_inner_link").addClass("el_inactive");
+
+            $(".main_inner_link").removeClass("el_inactive");
+            $(".main_inner_link").addClass("el_active");
+
+            $(".my_submenu_wrapper.portfolio_menus").removeClass("el_inactive");
+            $(".my_submenu_wrapper.portfolio_menus").addClass("el_active");
+
+
+            //TO set portfolio submenu active
+            var activePortSubMenu = localStorage.getItem("port_submenu");
+            // alert(activePortSubMenu);
+            if(activePortSubMenu=="still_btn"){
+                $(".my_submenu_wrapper .my_submenu_list .sb_mnu ").removeClass("active_m");
+                $(".my_submenu_wrapper .my_submenu_list #still_menu").addClass("active_m");
+
+                $(".my_submenu_wrapper .my_submenu_content .menu_content").removeClass("el_active");
+                $(".my_submenu_wrapper .my_submenu_content .still_content").addClass("el_active");
+            }
+            else if(activePortSubMenu=="video_btn"){
+                $(".my_submenu_wrapper .my_submenu_list .sb_mnu ").removeClass("active_m");
+                $(".my_submenu_wrapper .my_submenu_list #video_menu").addClass("active_m");
+
+
+                $(".my_submenu_wrapper .my_submenu_content .menu_content").removeClass("el_active");
+                $(".my_submenu_wrapper .my_submenu_content .video_content").addClass("el_active");
+
+
+            }
+            else if(activePortSubMenu=="concept_btn"){
+                $(".my_submenu_wrapper .my_submenu_list .sb_mnu ").removeClass("active_m");
+                $(".my_submenu_wrapper .my_submenu_list #concept_menu").addClass("active_m");
+
+                $(".my_submenu_wrapper .my_submenu_content .menu_content").removeClass("el_active");
+                $(".my_submenu_wrapper .my_submenu_content .concept_content").addClass("el_active");
+            }
+            else if(activePortSubMenu=="interactive_btn"){
+                $(".my_submenu_wrapper .my_submenu_list .sb_mnu ").removeClass("active_m");
+                $(".my_submenu_wrapper .my_submenu_list #interactive_menu").addClass("active_m");
+
+                $(".my_submenu_wrapper .my_submenu_content .menu_content").removeClass("el_active");
+                $(".my_submenu_wrapper .my_submenu_content .interactive_content").addClass("el_active");
+            }
+
+            //Clear Localstorage here to unset active menu
+            localStorage.setItem("openMenu",null);
+        }
+    }
+
+
+});

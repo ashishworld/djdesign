@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>AJ Design</title>
+    <meta name="Description" content="3D CAD Jewellery design services by AJ Design">
+    <meta name="Keywords" content="AJ Design, CAD Company, CAD Design, Jewellery CAD Design, CAD, Design, Jewellery Design, Jewelry Designers, Jewelry Manufacturing, Custom made Jewelry, CAD Design Service Providers, Image Rendering Services, Video Rendering Services, Video Animations, Video Animation Services, 3D Model Services, Creative Process, Custom Design, Interactive Design">
+  <link rel="stylesheet" href="../src/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="../src/css/site.css" />
+  <link rel="stylesheet" href="../src/css/site-style.css" />
+  <link rel="stylesheet" href="../src/css/camera.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+
+
+  <script type='text/javascript' src="../src/js/jquery-min.js"></script>
+  <script type='text/javascript' src="../src/js/bootstrap.bundle.min.js"></script>
+  <script type='text/javascript' src="../src/js/site-script.js"></script>
+  <script type="text/javascript" src="../src/js/jquery-1.8.2.min.js"></script>
+  <script type='text/javascript' src='../src/js/jquery.mobile.customized.min.js'></script>
+  <script type='text/javascript' src="../src/js/jquery.easing.1.3.js" type="text/javascript"></script>
+  <script type='text/javascript' src="../src/js/camera.js"></script>
+  <script type="text/javascript" src="../src/js/jquery.bxslider.js"></script>
+  <script type="text/javascript">
+    jQuery(document).ready(function ($) {
+      $('.bxslider1').bxSlider({
+        auto: true,
+        pager: true,
+        pause: 10000,
+        infiniteLoop: true,
+        adaptiveHeight: true,
+        touchEnabled: true,
+        autoHover: true,
+        mode: 'fade'
+      });
+    });
+  </script>
+
+
+  <link rel="stylesheet" media="screen" href="../src/menu/bootstap.min.css">
+  <!-- Author Rohit Font Family css -->
+  <link rel="stylesheet" href="../src/menu/style.css">
+  <!-- HAMBURGER MENU CSS -->
+  <link rel="stylesheet" href="../src/menu/hamburger.css">
+  <!-- ANIMATE CSS -->
+  <link rel="stylesheet" href="../src/menu/animate.css">
+  <link rel="stylesheet" type="text/css" href="../src/menu/custom.css">
+  <!-- AUTHOR ROHIT ANIMATE CSS 30-06-2020 STARTS -->
+  <link href="../src/menu/aos.css" rel="stylesheet">
+  <!-- AUTHOR ROHIT ANIMATE CSS 30-06-2020 ENDS -->
+  <script type="text/javascript" src="../src/menu/jquery.min.js.download"></script>
+  <!-- AUTHOR ROHIT ANIMATE JS 30-06-2020 STARTS -->
+  <script src="../src/menu/aos.js.download"></script>
+  <!-- AUTHOR ROHIT HAMBURGER MENU JS 30-07-2020 STARTS -->
+  <script src="../src/menu/hamburger.js.download"></script>
+  <script>
+    AOS.init();
+  </script>
+  <!-- AUTHOR ROHIT ANIMATE JS 30-06-2020 ENDS -->
+  <script src="../src/menu/bootstrap.min.js.download"></script>
+
+  <style>
+    .row>.column {
+      padding: 0 8px;
+    }
+
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    .column {
+      float: left;
+      width: 25%;
+    }
+
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 10000;
+      left: 0;
+      top: 0 !important;
+      width: 100%;
+      height: 100%;
+      overflow: hidden !important;
+      background: rgba(255, 255, 255, 0.3);
+      -webkit-backdrop-filter: blur(11px);
+      backdrop-filter: blur(14px);
+    }
+
+    .close_m {
+      padding-top: 100px;
+    }
+
+    .modal-content {
+      position: relative;
+      background-color: transparent;
+      margin: auto;
+      padding: 0;
+      width: 100%;
+      max-width: 600px;
+      border: none;
+    }
+
+    .close {
+      color: #737373;
+      position: absolute;
+      top: 10px;
+      right: 25px;
+      font-size: 35px;
+      font-weight: bold;
+      z-index: 9999;
+    }
+
+    .close:hover,
+    .close:focus {
+      color: #999;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    .mySlides {
+      display: none;
+    }
+
+    .cursor {
+      cursor: pointer;
+    }
+
+    .prev,
+    .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      padding: 16px;
+      margin-top: -50px;
+      color: #737373 !important;
+      font-weight: bold;
+      font-size: 30px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+      -webkit-user-select: none;
+    }
+
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+
+    .prev:hover,
+    .next:hover {
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    .numbertext {
+      color: #f2f2f2;
+      font-size: 12px;
+      padding: 8px 12px;
+      position: absolute;
+      top: 0;
+    }
+
+
+    .caption-container {
+      text-align: center;
+      background-color: black;
+      padding: 2px 16px;
+      color: white;
+    }
+
+    .demo {
+      opacity: 0.6;
+    }
+
+    .active,
+    .demo:hover {
+      opacity: 1;
+    }
+
+    img.hover-shadow {
+      transition: 0.3s;
+    }
+
+
+
+
+    #overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      opacity: 0.5;
+      z-index: 50;
+      color: #fff;
+    }
+
+    .vid_section {
+      z-index: 50;
+    }
+
+    #iframeModal {
+      padding-top: 50px;
+      backdrop-filter: none;
+      background-color: #fff;
+    }
+
+    #iframeModal .modal-content {
+      max-width: 100%;
+    }
+
+    #iframeModal iframe {
+      height: -webkit-fill-available !important;
+    }
+
+
+
+    #iframeModal .close {
+      color: #222;
+    }
+
+    @media screen and (min-width:501px) and (max-width:767px) {
+      #myModal .modal-content {
+        height: 100%;
+      }
+    }
+
+    .close_m .mySlides video::-webkit-media-controls-panel {
+      display: flex !important;
+      opacity: 1 !important;
+      -moz-box-shadow: inset 0 -100px 100px -100px #000000;
+      -webkit-box-shadow: inset 0 -100px 100px -100px #000000;
+      box-shadow: inset 0 -100px 100px -100px #000000;
+    }
+
+
+    #myModal video {
+      height: 600px;
+    }
+  </style>
+
+  <script>
+    function openModal() {
+      document.getElementById('myModal').style.display = "block";
+      $("body").addClass("lightbox_active");
+    }
+    //AUTHOR ROHIT CODE STARTS
+    function openiframeModal() {
+      document.getElementById('iframeModal').style.display = "block";
+    }
+    function closeiframeModal() {
+      document.getElementById('iframeModal').style.display = "none";
+    }
+    //AUTHOR ROHIT CODE ENDS
+    function closeModal() {
+      $("body").removeClass("lightbox_active");
+      var vid = $('.vid_pal').length;
+      $('.port_row video').each(function () {
+        this.pause();
+        this.currentTime = 0;
+      });
+      document.getElementById('myModal').style.display = "none";
+    }
+    $(document).on('click', '.close_m', function (e) {
+      if ($(e.target).closest(".mySlides").length === 0) {
+        $('.vid_pal').each(function () {
+          $(this).get(0).pause();
+        });
+        document.getElementById('myModal').style.display = "none";
+      }
+    });
+    var slideIndex = 1;
+    showSlides(slideIndex);
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("demo");
+      var captionText = document.getElementById("caption");
+      if (n > slides.length) { slideIndex = 1 }
+      if (n < 1) { slideIndex = slides.length }
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
+      captionText.innerHTML = dots[slideIndex - 1].alt;
+    }
+  </script>
+  <script>
+    $(document).ready(function () {
+      $('.port_row .vid_section').each(function (i, obj) {
+        $(this).on("mouseover", function () { hoverVideo(i); });
+        $(this).on("mouseout", function () { hideVideo(i); });
+      });
+    });
+    function hoverVideo(i) {
+      $('.port_row .vid_section')[i].play();
+    }
+
+    function hideVideo(i) {
+      $('.port_row .vid_section')[i].currentTime = 0;
+      $('.port_row .vid_section')[i].pause();
+    }
+  </script>
+  <script>
+    $(document).ready(function () {
+      $('.port_row video').each(function () {
+        this.pause();
+        this.currentTime = 0;
+      });
+
+      $(document).on("click", ".close_m", _ => {
+        $("body").removeClass("lightbox_active");
+      });
+
+    });
+  </script>
+</head>
+
+<body>
+  <!-- :: Header :: -->
+  <script src="../src/js/header.js"></script>
+  <!-- :: Header :: -->
+
+
+  <div class="wrapper">
+    <div class="container-1920 bg-intro">
+      <div class="container py-5">
+        <div class="row">
+          <div class="col-md-10 text-center m-auto">
+            <h2 class="h1 font-weight-bold text-center text-uppercase mb-4">Interactive Animation</h1>
+              <p>Bestow your customers with an unparalleled viewing experience where they have the freedom to experience a design their way through Interactive Animation. Using the latest technology and tools, we create 360 animations of your jewelry where the customer can view it from any angle and also zoom in to view the fine craftsmanship.</p>
+          </div>
+        </div>
+        <div class="col-md-10 text-center m-auto px-0">
+          <div class="row port_row row-cols-1 row-cols-md-2 row-cols-xl-3">
+            <div class="col mb-4">
+              <div class="border p-2 position-relative overflow-hidden">
+                <div class="inner_port">
+                  <iframe src="cdi-rn-cr-479_//animation.html" height="400px" width="100%" class="border-0"></iframe>
+                  <div onclick="openModal();currentSlide(1)" class="img-image jbox-img hover-shadow cursor" id=""></div>
+                </div>
+              </div>
+            </div>
+            <div class="col mb-4">
+              <div class="border p-2 position-relative overflow-hidden">
+                <div class="inner_port">
+                  <iframe src="rcj-rn-r-11513//animation.html" height="400px" width="100%" class="border-0"></iframe>
+                  <div onclick="openModal();currentSlide(2)" class="img-image jbox-img hover-shadow cursor" id=""></div>
+                </div>
+              </div>
+            </div>
+            <div class="col mb-4">
+              <div class="border p-2 position-relative overflow-hidden">
+                <div class="inner_port">
+                  <iframe src="cdi-rn-cr-483_rg//animation.html" height="400px" width="100%" class="border-0"></iframe>
+                  <div onclick="openModal();currentSlide(3)" class="img-image jbox-img hover-shadow cursor" id=""></div>
+                </div>
+              </div>
+            </div>
+            <div class="col mb-4">
+              <div class="border p-2 position-relative overflow-hidden">
+                <div class="inner_port">
+                  <iframe src="rcj-rn-r-11517//animation.html" height="400px" width="100%" class="border-0"></iframe>
+                  <div onclick="openModal();currentSlide(4)" class="img-image jbox-img hover-shadow cursor" id=""></div>
+                </div>
+              </div>
+            </div>
+            <div class="col mb-4">
+              <div class="border p-2 position-relative overflow-hidden">
+                <div class="inner_port">
+                  <iframe src="cdi-rn-cr-393-yg//animation.html" height="400px" width="100%" class="border-0"></iframe>
+                  <div onclick="openModal();currentSlide(5)" class="img-image jbox-img hover-shadow cursor" id=""></div>
+                </div>
+              </div>
+            </div>
+            <div class="col mb-4">
+              <div class="border p-2 position-relative overflow-hidden">
+                <div class="inner_port">
+                  <iframe src="rcj-rn-r-11516//animation.html" height="400px" width="100%" class="border-0"></iframe>
+                  <div onclick="openModal();currentSlide(6)" class="img-image jbox-img hover-shadow cursor" id=""></div>
+                </div>
+              </div>
+            </div>
+            <!-- <div class="col mb-4">
+                            <div class="border p-2 position-relative overflow-hidden">
+                                <div class="inner_port">
+                                    <iframe src="http://thecadco.com/360/tes/cdi-er-cr-229-iv-yg//default.php"
+                                        height="400px" width="100%" class="border-0"></iframe>
+                                    <div onclick="openModal();currentSlide(7)"
+                                        class="img-image jbox-img hover-shadow cursor" id=""></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mb-4">
+                            <div class="border p-2 position-relative overflow-hidden">
+                                <div class="inner_port">
+                                    <iframe src="http://thecadco.com/360/tes/cdi-er-cr-143-a-iv-wg//default.php"
+                                        height="400px" width="100%" class="border-0"></iframe>
+                                    <div onclick="openModal();currentSlide(8)"
+                                        class="img-image jbox-img hover-shadow cursor" id=""></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mb-4">
+                            <div class="border p-2 position-relative overflow-hidden">
+                                <div class="inner_port">
+                                    <iframe src="http://thecadco.com/360/tes/cdi-er-cr-271-iv-rg//default.php"
+                                        height="400px" width="100%" class="border-0"></iframe>
+                                    <div onclick="openModal();currentSlide(9)"
+                                        class="img-image jbox-img hover-shadow cursor" id=""></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mb-4">
+                            <div class="border p-2 position-relative overflow-hidden">
+                                <div class="inner_port">
+                                    <iframe src="http://thecadco.com/360/tes/cdi-pd-cr-345-wg//default.php"
+                                        height="400px" width="100%" class="border-0"></iframe>
+                                    <div onclick="openModal();currentSlide(10)"
+                                        class="img-image jbox-img hover-shadow cursor" id=""></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mb-4">
+                            <div class="border p-2 position-relative overflow-hidden">
+                                <div class="inner_port">
+                                    <iframe src="http://thecadco.com/360/tes/cdi-pd-cr-341-rg//default.php"
+                                        height="400px" width="100%" class="border-0"></iframe>
+                                    <div onclick="openModal();currentSlide(11)"
+                                        class="img-image jbox-img hover-shadow cursor" id=""></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mb-4">
+                            <div class="border p-2 position-relative overflow-hidden">
+                                <div class="inner_port">
+                                    <iframe src="http://thecadco.com/360/tes/cdi-pd-cr-342-yg//default.php"
+                                        height="400px" width="100%" class="border-0"></iframe>
+                                    <div onclick="openModal();currentSlide(12)"
+                                        class="img-image jbox-img hover-shadow cursor" id=""></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mb-4">
+                            <div class="border p-2 position-relative overflow-hidden">
+                                <div class="inner_port">
+                                    <iframe src="http://thecadco.com/360/tes/cdi-bn-cr-331-iv-rg//default.php"
+                                        height="400px" width="100%" class="border-0"></iframe>
+                                    <div onclick="openModal();currentSlide(13)"
+                                        class="img-image jbox-img hover-shadow cursor" id=""></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mb-4">
+                            <div class="border p-2 position-relative overflow-hidden">
+                                <div class="inner_port">
+                                    <iframe src="http://thecadco.com/360/tes/cdi-bn-cr-413-yg//default.php"
+                                        height="400px" width="100%" class="border-0"></iframe>
+                                    <div onclick="openModal();currentSlide(14)"
+                                        class="img-image jbox-img hover-shadow cursor" id=""></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mb-4">
+                            <div class="border p-2 position-relative overflow-hidden">
+                                <div class="inner_port">
+                                    <iframe src="http://thecadco.com/360/tes/cdi-bn-cr-414-_wg//default.php"
+                                        height="400px" width="100%" class="border-0"></iframe>
+                                    <div onclick="openModal();currentSlide(15)"
+                                        class="img-image jbox-img hover-shadow cursor" id=""></div>
+                                </div>
+                            </div>
+                        </div> -->
+          </div>
+        </div>
+
+        <div id="myModal" class="modal">
+          <span class="close cursor" onclick="closeModal()">&times;</span>
+          <div class="close_m">
+            <div class="modal-content ">
+
+
+
+              <div class="mySlides">
+
+                <iframe src="http://thecadco.com/360/tes/cdi-rn-cr-479_/" width="100%" height="550px"></iframe>
+              </div>
+
+
+
+              <div class="mySlides">
+
+                <iframe src="http://thecadco.com/360/tes/rcj-rn-r-11513/" width="100%" height="550px"></iframe>
+              </div>
+
+
+
+              <div class="mySlides">
+
+                <iframe src="http://thecadco.com/360/tes/cdi-rn-cr-483_rg/" width="100%" height="550px"></iframe>
+              </div>
+
+
+
+              <div class="mySlides">
+
+                <iframe src="http://thecadco.com/360/tes/rcj-rn-r-11517/" width="100%" height="550px"></iframe>
+              </div>
+
+
+
+              <div class="mySlides">
+
+                <iframe src="http://thecadco.com/360/tes/cdi-rn-cr-393-yg/" width="100%" height="550px"></iframe>
+              </div>
+
+
+
+              <div class="mySlides">
+
+                <iframe src="http://thecadco.com/360/tes/rcj-rn-r-11516/" width="100%" height="550px"></iframe>
+              </div>
+
+
+
+              <div class="mySlides">
+
+                <iframe src="http://thecadco.com/360/tes/cdi-er-cr-229-iv-yg/" width="100%" height="550px"></iframe>
+              </div>
+
+
+
+              <div class="mySlides">
+
+                <iframe src="http://thecadco.com/360/tes/cdi-er-cr-143-a-iv-wg/" width="100%" height="550px"></iframe>
+              </div>
+
+
+
+              <div class="mySlides">
+
+                <iframe src="http://thecadco.com/360/tes/cdi-er-cr-271-iv-rg/" width="100%" height="550px"></iframe>
+              </div>
+
+
+
+              <div class="mySlides">
+
+                <iframe src="http://thecadco.com/360/tes/cdi-pd-cr-345-wg/" width="100%" height="550px"></iframe>
+              </div>
+
+
+
+              <div class="mySlides">
+
+                <iframe src="http://thecadco.com/360/tes/cdi-pd-cr-341-rg/" width="100%" height="550px"></iframe>
+              </div>
+
+
+
+              <div class="mySlides">
+
+                <iframe src="http://thecadco.com/360/tes/cdi-pd-cr-342-yg/" width="100%" height="550px"></iframe>
+              </div>
+
+
+
+              <div class="mySlides">
+
+                <iframe src="http://thecadco.com/360/tes/cdi-bn-cr-331-iv-rg/" width="100%" height="550px"></iframe>
+              </div>
+
+
+
+              <div class="mySlides">
+
+                <iframe src="http://thecadco.com/360/tes/cdi-bn-cr-413-yg/" width="100%" height="550px"></iframe>
+              </div>
+
+
+
+              <div class="mySlides">
+
+                <iframe src="http://thecadco.com/360/tes/cdi-bn-cr-414-_wg/" width="100%" height="550px"></iframe>
+              </div>
+
+
+            </div>
+          </div>
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Breadcrumbs Panel -->
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb rounded-0 justify-content-center m-0 py-3 border-top wow fadeInUp">
+        <li class="breadcrumb-item"><a href="#"><i class="fa fa-home" aria-hidden="true"></i></a></li>
+        <li class="breadcrumb-item">Concept Animation</li>
+      </ol>
+    </nav>
+    <!-- Breadcrumbs Panel -->
+    <div class="push"></div>
+  </div>
+
+  <!-- :: footer :: -->
+  <script src="../src/js/footer.js"></script>
+  <!-- :: footer :: -->
+</body>
+
+</html>

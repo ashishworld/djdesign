@@ -1,0 +1,14 @@
+document.write('<footer class="site-footer bg-footer bg-light">');
+document.write('        <footer class="footer py-4">');
+document.write('            <div class="container px-md-5">');
+document.write('                <div class="row align-items-center">');
+document.write('                    <div class="col-lg-12 col-md-12 text-center">');
+document.write('                        <div class="wow fadeInUp">');
+document.write('                            © 2021. <a href="">Home</a> &nbsp;|&nbsp; <a href="../contactus/">Contact Us</a> &nbsp;|&nbsp; <a');
+document.write('                                href="">Privacy Policy</a>');
+document.write('                        </div>');
+document.write('                    </div>');
+document.write('                </div>');
+document.write('            </div>');
+document.write('        </footer>');
+document.write('    </footer>');

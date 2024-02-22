@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">	
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, shrink-to-fit=no">
+		<title>360 View</title>
+		<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet">
+		<link rel="icon" href="../../../assets/site/images/fav_ico_1.png" type="image/gif" sizes="16x16">
+		<link rel="stylesheet" href="../../../assets/site/css/bootstrap.min.css">
+		<link rel="stylesheet" href="../../../assets/site/css/jquery.mCustomScrollbar.css">
+		<link rel="stylesheet" href="../../../assets/site/css/banner-progress.css">
+		<link rel="stylesheet" href="../../../assets/site/css/style.css">
+		<link rel="stylesheet" type="text/css" href="../../../assets/site/css/hover_style_common.css" />
+        <link rel="stylesheet" type="text/css" href="../../../assets/site/css/hover_style1.css" />
+        <link rel="stylesheet" type="text/css" href="../../../assets/site/css/custom.css" />
+        <link rel="stylesheet" type="text/css" href="../../../assets/site/css/datepicker_jquery-ui.css" />
+        <link rel="stylesheet" type="text/css" href="../../../assets/site/css/datepicker_style.css" />
+		  <link rel="stylesheet" type="text/css" href="../../../assets/site/font/FontsFree-Net-proxima_nova_reg-webfont.ttf" />
+		<link href="../../../assets/site/css/chosen.min.css" rel="stylesheet"/>
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+		<link rel='stylesheet' href='https://flatlogic.github.io/awesome-bootstrap-checkbox/bower_components/Font-Awesome/css/font-awesome.css'> 
+		<script type="text/javascript" src="http://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=EGy-QYAj3I0lQwn63FHMI-lHNI3GEAz9oFpzEWTDlM9H0hQ6B4b_n5UBygeLXYY4xAAw1OzT4raAQoi0vOjJrw" charset="UTF-8"></script><script type="text/javascript" src="../../assets/admin/js/jquery.min.js"></script>
+		<script type="text/javascript" src="../../assets/admin/js/validation/validation.js"></script>
+		<script src="https://cdn.rawgit.com/harvesthq/chosen/gh-pages/chosen.jquery.min.js"></script>		
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css">
+		<link rel="stylesheet" type="text/css" href="../../assets/admin/css/plugin/datatables/datatables.css" />
+		
+		 <style>
+			.code {display: inline-block;padding: 5px;border: 1px solid #ccc;color: #B0B0B0;background-color: #173C47;border-radius: 3px;}
+			.overlay {position: absolute;display: inline-block;width: 540px;height: 540px;pointer-events: none;}
+			.c-tag {color: #B38D36;}
+			.c-attribute {color: #48B093;}
+			.col-label{padding: 5px;display: inline;}
+			.text-white{color: white !important;font-size: 15px;}
+			th{text-align:left;}
+			.header{background: black;}
+			.company_name{font-size: 25px;font-weight: bolder;color: white;}
+			.img_iframe{left: 0px; width: 100%; height: 0px; position: relative; padding-bottom: 100%; overflow: hidden;}
+			body{background:#fff; }
+			.sec_360{ background:#fff; height:100%;}
+			.company_logo img{border-radius: 60%;}
+			.company_logo{    padding-bottom: 30px;}	
+			.table.table-borderless td, .table.table-borderless th{ border-top:0 !important;    padding: 0px;}
+		</style>	
+	</head>
+	<body>
+	
+	<div class="sec_360">
+		<div id="d" style="position:relative;width:100%;height:100%;">
+			<iframe style="position:relative;top:50%;left:50%;width:656px;height:656px;transform:translate(-50%,-50%);" src="animation.html" scrolling="no" frameborder="0" allowTransparency="true" style="border:none; overflow:hidden" id="fb"></iframe>
+		</div>
+		<!-- <div class="container">
+			<div class="row ">
+				<div class="col-lg-12 col-md-12">
+					<div class="img_iframe">
+						<iframe src="default.php"
+								allowfullscreen
+								style="position: absolute; top: 0px; left: 0px; height: 100%; width: 1px; min-width: 100%;"
+								frameborder="0"
+								scrolling="no">	
+						</iframe>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-12 pt-5 mt-5">
+														 <button type="submit" id="back" class="btn push-log-sub" title="Send">Back to Portfolio</button>
+				</div>
+		  </div>
+	  </div> -->
+	</div>
+	
+	<script>
+		   document.getElementById("back").addEventListener("click", function() {
+			    window.history.back();
+			});
+	</script>
+	</body>
+</html>
